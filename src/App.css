@@ -1,0 +1,45 @@
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f8fafc, #f1f5f9);
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .app-container {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-container {
+    padding: 2rem;
+  }
+}
+
+.app-content {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.error-message {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #fef2f2;
+  border-left: 4px solid #ef4444;
+  border-radius: 0.5rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.error-message p {
+  font-size: 0.875rem;
+  color: #dc2626;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
